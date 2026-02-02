@@ -426,3 +426,13 @@ for i in range(0, len(li_one)):
         dict_one[li_one[i]] = 1
         
 print(dict_one)
+
+# Third Way 
+li_one = [1,4,3,5,7,3,1,5,3,5,7,2]
+dict_one = {}
+for i in range(0, len(li_one)):
+    dict_one[li_one[i]] = dict_one.get(li_one[i], 0) + 1
+    
+print(dict_one)
+# Time Complexity O(n)
+# Space Complexity O(n)
