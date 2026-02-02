@@ -414,3 +414,15 @@ for i in li:
     new_dict[i] = li.count(i)
     
 print(new_dict)
+
+# Second Way
+li_one = [1,4,3,5,7,3,1,5,3,5,7,2]
+dict_one = {}
+
+for i in range(0, len(li_one)):
+    if li_one[i] in dict_one:
+        dict_one[li_one[i]] += 1
+    else:
+        dict_one[li_one[i]] = 1
+        
+print(dict_one)
