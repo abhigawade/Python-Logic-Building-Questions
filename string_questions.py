@@ -19,3 +19,11 @@ for i in st:
     count += 1
 print(count)
 
+#Remove Letters From a String in Python
+st_one = 'hello world'
+st_two = ''
+for i in st_one:
+    if i != 'l':
+        st_two += i
+    
+print(st_two)
