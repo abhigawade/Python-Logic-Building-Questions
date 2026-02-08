@@ -83,3 +83,13 @@ print(li_one)
 # Method two
 li_one.extend(li_two)
 print(li_one)
+
+# Move all zeros to end
+li_one = [1,4,7,0,3,0,2,5,0,6]
+n = len(li_one)
+for i in range(0,n):
+    if li_one[i] == 0:
+        val = li_one.pop(i)
+        li_one.append(val)
+        
+print(li_one)
