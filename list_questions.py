@@ -46,3 +46,40 @@ for i in li_one:
         li_two.append(i)
         
 print(li_two)
+
+# Find second largest element in list
+li_one = [1, 2, 4, 8, 5, 4]
+
+max_ele = float('-inf')
+sec_max = float('-inf')
+
+for i in li_one:
+    if i > max_ele:
+        sec_max = max_ele
+        max_ele = i
+    elif i > sec_max and i != max_ele:
+        sec_max = i
+
+print(sec_max)
+
+# Reverse a List k times
+li_one = [1,2,3,4,5]   #[4,5,1,2,3]
+k =  2
+for i in range(1, k+1):
+    val = li_one.pop()
+    li_one.insert(0,val)
+    
+print(li_one)
+
+#Merge Two Lists
+li_one = [1,2,3]
+li_two = [4,5,6]
+
+for i in li_two:
+    li_one.append(i)
+    
+print(li_one)
+
+# Method two
+li_one.extend(li_two)
+print(li_one)
