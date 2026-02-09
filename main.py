@@ -436,3 +436,15 @@ for i in range(0, len(li_one)):
 print(dict_one)
 # Time Complexity O(n)
 # Space Complexity O(n)
+
+#Find All Prime Numbers between 1 to 100
+li_one = []
+for num in range(2,101):
+    is_prime = True
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+    if is_prime:
+        li_one.append(num)
+            
+print(li_one)
