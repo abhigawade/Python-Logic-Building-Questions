@@ -448,3 +448,15 @@ for num in range(2,101):
         li_one.append(num)
             
 print(li_one)
+
+#Factorial of Number
+def fact(n):
+    if n == 1:
+        return 1
+    return n*fact(n-1)
+    
+    
+val = fact(5)
+print(val)
+
+
