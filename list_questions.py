@@ -93,3 +93,13 @@ for i in range(0,n):
         li_one.append(val)
         
 print(li_one)
+
+# Reverse a List using while loop
+li_one = [1,2,3,4,5,6]
+li_two = []
+i = len(li_one)-1
+while(i>=0):
+    li_two.append(li_one[i])
+    i -= 1
+    
+print(li_two)
