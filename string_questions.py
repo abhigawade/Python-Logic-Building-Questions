@@ -96,3 +96,12 @@ if flag:
     print('Yes it has')
 else:
     print('No')
+
+# Get desired output from string
+str_one = 'a3b2c1'
+output_str = 'aaabbc'
+str_two = ''
+n = len(str_one)
+for i in range(0, n, 2):
+    str_two += str_one[i] * int(str_one[i+1])
+print(str_two)
