@@ -459,4 +459,14 @@ def fact(n):
 val = fact(5)
 print(val)
 
-
+# Fibonnaci Series in Python
+def fibo(n):
+    a=0
+    b=1
+    for i in range(1,n):
+        c = a+b
+        a=b
+        b=c
+    print(c)
+        
+fibo(9)
