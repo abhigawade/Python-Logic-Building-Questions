@@ -105,3 +105,22 @@ n = len(str_one)
 for i in range(0, n, 2):
     str_two += str_one[i] * int(str_one[i+1])
 print(str_two)
+
+# Input: s = "geeksforgeeks"
+# Output: 7 
+# Explanation: The longest substrings without repeating characters are "eksforg” and "ksforge", with lengths of 7.
+
+dict_one = {}
+s = "geeksforgeeks"
+n = len(s)
+max_len = 0
+for i in range(n):
+    seen = []
+    for j in range(i, n):
+        if s[j] in seen:
+            break
+        seen.append(s[j])
+        
+    max_len = max(max_len, len(seen))
+    
+print(max_len)
