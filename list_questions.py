@@ -103,3 +103,23 @@ while(i>=0):
     i -= 1
     
 print(li_two)
+
+# Two Sum Problem
+li_one = [0,1,2,3,5,6,7,8,9,11,14]
+target = 9
+res_list = []
+left = 0
+right = len(li_one)-1
+
+while(left<right):
+    ele_sum = li_one[left] + li_one[right]
+    if ele_sum == target:
+        res_list.append((li_one[left], li_one[right]))
+        left += 1
+        right -= 1
+    elif ele_sum > target:
+        right -= 1
+    else:
+        left += 1
+        
+print(res_list)
